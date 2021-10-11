@@ -1,0 +1,108 @@
+{
+  "collections": [
+    {
+      "label": "Pages Content",
+      "name": "page",
+      "path": "_content/pages",
+      "fields": [
+        {
+          "type": "string",
+          "label": "Title",
+          "name": "title",
+          "namespace": [
+            "page",
+            "title"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Sub Title",
+          "name": "subTitle",
+          "namespace": [
+            "page",
+            "subTitle"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Address",
+          "name": "address",
+          "namespace": [
+            "page",
+            "address"
+          ]
+        },
+        {
+          "type": "datetime",
+          "label": "Event Date",
+          "name": "evDate",
+          "ui": {
+            "dateFormat": "DD/MM/YYYY - hh:mm"
+          },
+          "namespace": [
+            "page",
+            "evDate"
+          ]
+        },
+        {
+          "type": "object",
+          "label": "Map Coordinates",
+          "name": "mapProps",
+          "fields": [
+            {
+              "type": "string",
+              "label": "Longitude",
+              "name": "lng",
+              "namespace": [
+                "page",
+                "mapProps",
+                "lng"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Latitude",
+              "name": "lat",
+              "namespace": [
+                "page",
+                "mapProps",
+                "lat"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "Zoom",
+              "name": "zoom",
+              "namespace": [
+                "page",
+                "mapProps",
+                "zoom"
+              ]
+            }
+          ],
+          "namespace": [
+            "page",
+            "mapProps"
+          ]
+        },
+        {
+          "type": "string",
+          "label": "Description",
+          "name": "description",
+          "isBody": true,
+          "ui": {
+            "component": "markdown"
+          },
+          "namespace": [
+            "page",
+            "description"
+          ]
+        }
+      ],
+      "namespace": [
+        "page"
+      ]
+    }
+  ],
+  "namespace": []
+}

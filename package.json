@@ -1,6 +1,6 @@
 {
   "name": "14biz",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "author": {
     "email": "kauly@hotmail.com",
@@ -11,9 +11,14 @@
     "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-map-gl": "^6.1.17"
+    "react-map-gl": "^6.1.17",
+    "react-markdown": "^7.0.1",
+    "react-tinacms-editor": "^0.52.0",
+    "styled-components": "^5.3.1",
+    "tinacms": "^0.56.0"
   },
   "devDependencies": {
+    "@tinacms/cli": "^0.56.0",
     "@types/node": "^16.10.3",
     "@types/react": "^17.0.27",
     "autoprefixer": "^10.3.7",
@@ -23,10 +28,9 @@
     "typescript": "^4.4.3"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prettier-format": "prettier --config .prettierrc 'pages/**/*' --write"
+    "dev": "yarn tinacms server:start -c \"next dev\"",
+    "tina-graph": "yarn tinacms server:start",
+    "tina-build": "yarn tinacms server:start -c \"next build\"",
+    "tina-start": "yarn tinacms server:start -c \"next start\""
   }
 }
