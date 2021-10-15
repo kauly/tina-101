@@ -1,7 +1,7 @@
 export type TMapProps = {
-  lng: string;
-  lat: string;
-  zoom: string;
+  latitude: number;
+  longitude: number;
+  zoom: number;
 };
 
 export type TUIData = {
@@ -12,9 +12,3 @@ export type TUIData = {
   description: string;
   mapProps: TMapProps;
 };
-
-export interface ILocation {
-  latitude: number;
-  longitude: number;
-  zoom: number;
-}

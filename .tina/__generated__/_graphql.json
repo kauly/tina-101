@@ -1094,14 +1094,14 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "lng"
+            "value": "longitude"
           },
           "arguments": [],
           "type": {
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "String"
+              "value": "Int"
             }
           }
         },
@@ -1109,14 +1109,14 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
-            "value": "lat"
+            "value": "latitude"
           },
           "arguments": [],
           "type": {
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "String"
+              "value": "Int"
             }
           }
         },
@@ -1131,7 +1131,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "String"
+              "value": "Int"
             }
           }
         }
@@ -1841,13 +1841,13 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "lng"
+            "value": "longitude"
           },
           "type": {
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "String"
+              "value": "Int"
             }
           }
         },
@@ -1855,13 +1855,13 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "lat"
+            "value": "latitude"
           },
           "type": {
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "String"
+              "value": "Int"
             }
           }
         },
@@ -1875,7 +1875,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "String"
+              "value": "Int"
             }
           }
         }

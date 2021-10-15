@@ -75,9 +75,9 @@ type Collection {
 union DocumentNode = PageDocument
 
 type PageMapProps {
-  lng: String
-  lat: String
-  zoom: String
+  longitude: Int
+  latitude: Int
+  zoom: Int
 }
 
 type Page {
@@ -122,9 +122,9 @@ input DocumentMutation {
 }
 
 input PageMapPropsMutation {
-  lng: String
-  lat: String
-  zoom: String
+  longitude: Int
+  latitude: Int
+  zoom: Int
 }
 
 input PageMutation {

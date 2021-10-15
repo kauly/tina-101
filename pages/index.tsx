@@ -28,16 +28,6 @@ function HomePage({ data }) {
     }
   }, [evDate]);
 
-  const parsedMap = useMemo(() => {
-    if (mapProps) {
-      return {
-        latitude: parseFloat(mapProps.lat),
-        longitude: parseFloat(mapProps.lng),
-        zoom: parseInt(mapProps.zoom)
-      };
-    }
-  }, [mapProps]);
-
   return (
     <div className="h-screen w-full flex flex-col items-center bg-main-pattern">
       <div className="w-full p-4 text-center">
@@ -58,7 +48,7 @@ function HomePage({ data }) {
         </h3>
       </div>
       <div className="relative w-full h-full bg-red-200">
-        {parsedMap ? <LocationMap {...parsedMap} /> : undefined}
+        {mapProps ? <LocationMap {...mapProps} /> : undefined}
       </div>
     </div>
   );
@@ -76,8 +66,8 @@ export async function getStaticProps() {
               address
               description
               mapProps {
-                lng
-                lat
+                longitude
+                latitude
                 zoom
               }
             }

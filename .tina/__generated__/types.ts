@@ -142,9 +142,9 @@ export type DocumentNode = PageDocument;
 
 export type PageMapProps = {
   __typename?: 'PageMapProps';
-  lng?: Maybe<Scalars['String']>;
-  lat?: Maybe<Scalars['String']>;
-  zoom?: Maybe<Scalars['String']>;
+  longitude?: Maybe<Scalars['Int']>;
+  latitude?: Maybe<Scalars['Int']>;
+  zoom?: Maybe<Scalars['Int']>;
 };
 
 export type Page = {
@@ -227,9 +227,9 @@ export type DocumentMutation = {
 };
 
 export type PageMapPropsMutation = {
-  lng?: Maybe<Scalars['String']>;
-  lat?: Maybe<Scalars['String']>;
-  zoom?: Maybe<Scalars['String']>;
+  longitude?: Maybe<Scalars['Int']>;
+  latitude?: Maybe<Scalars['Int']>;
+  zoom?: Maybe<Scalars['Int']>;
 };
 
 export type PageMutation = {

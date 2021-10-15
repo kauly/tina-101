@@ -36,19 +36,28 @@ export default defineSchema({
           name: 'mapProps',
           fields: [
             {
-              type: 'string',
+              type: 'number',
               label: 'Longitude',
-              name: 'lng'
+              name: 'longitude',
+              ui: {
+                component: 'number'
+              }
             },
             {
-              type: 'string',
+              type: 'number',
               label: 'Latitude',
-              name: 'lat'
+              name: 'latitude',
+              ui: {
+                component: 'number'
+              }
             },
             {
-              type: 'string',
+              type: 'number',
               label: 'Zoom',
-              name: 'zoom'
+              name: 'zoom',
+              ui: {
+                component: 'number'
+              }
             }
           ]
         },

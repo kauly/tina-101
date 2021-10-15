@@ -50,29 +50,38 @@
           "name": "mapProps",
           "fields": [
             {
-              "type": "string",
+              "type": "number",
               "label": "Longitude",
-              "name": "lng",
+              "name": "longitude",
+              "ui": {
+                "component": "number"
+              },
               "namespace": [
                 "page",
                 "mapProps",
-                "lng"
+                "longitude"
               ]
             },
             {
-              "type": "string",
+              "type": "number",
               "label": "Latitude",
-              "name": "lat",
+              "name": "latitude",
+              "ui": {
+                "component": "number"
+              },
               "namespace": [
                 "page",
                 "mapProps",
-                "lat"
+                "latitude"
               ]
             },
             {
-              "type": "string",
+              "type": "number",
               "label": "Zoom",
               "name": "zoom",
+              "ui": {
+                "component": "number"
+              },
               "namespace": [
                 "page",
                 "mapProps",
